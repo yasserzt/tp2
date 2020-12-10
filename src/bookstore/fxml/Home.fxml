@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="954.0" style="-fx-background-color: #c4923e;" stylesheets="@../css/homeStyling.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstore.controllers.HomeController">
+   <children>
+      <AnchorPane prefHeight="146.0" prefWidth="954.0" style="-fx-background-color: #965015;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="323.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Circle fill="#c4923e" layoutX="72.0" layoutY="72.0" radius="76.0" stroke="#c4923e" strokeType="INSIDE" />
+                  <ImageView fitHeight="90.0" fitWidth="86.0" layoutX="25.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/book.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="103.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #C4923E; -fx-background-radius: 0 50 50 0;">
+                     <children>
+                        <Label layoutX="18.0" layoutY="1.0" prefHeight="97.0" prefWidth="179.0" style="-fx-background-radius: 50;" text="Bookstore&#10;EWA" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Serif Regular" size="39.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="803.0" layoutY="-3.0" prefHeight="153.0" prefWidth="151.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="BtnExit" layoutX="24.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="97.0" prefWidth="103.0" style="-fx-background-color: #965015;">
+                     <graphic>
+                        <ImageView fitHeight="107.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="10.0" style="-fx-background-color: #C4923E;" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="146.0" prefHeight="454.0" prefWidth="954.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="146.0">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="326.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0">
+               <image>
+                  <Image url="@../icons/coffee-cup.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="383.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="13.0">
+               <image>
+                  <Image url="@../icons/open-book.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#c4923e" layoutX="348.0" layoutY="378.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="68.0" />
+            <Circle fill="#c4923e" layoutX="336.0" layoutY="356.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="85.0" />
+            <Circle fill="#c4923e" layoutX="316.0" layoutY="331.0" radius="17.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="106.0" />
+            <AnchorPane layoutX="60.0" layoutY="14.0" prefHeight="305.0" prefWidth="812.0" style="-fx-background-color: #c4923e; -fx-background-radius: 80; -fx-border-color: #000000; -fx-border-radius: 80;" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Button fx:id="btnOuvrages" layoutX="65.0" layoutY="16.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" stylesheets="@../css/homeStyling.css" text="Ouvrages" textFill="#eec470" textOverrun="CLIP" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="15.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEmpreintes" layoutX="65.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" styleClass="btns-home" stylesheets="@../css/homeStyling.css" text="Empreintes" textFill="#eec470" textOverrun="CLIP" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="64.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnLivraisons" layoutX="317.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="194.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20; -fx-border-radius: 20;" styleClass="btns-home" stylesheets="@../css/homeStyling.css" text="Livraisons" textFill="#eec470" textOverrun="CLIP" AnchorPane.rightAnchor="61.0" AnchorPane.topAnchor="18.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnClients" layoutX="317.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="196.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" styleClass="btns-home" stylesheets="@../css/homeStyling.css" text="Clients" textFill="#eec470" textOverrun="CLIP" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="59.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnCommandes" alignment="BASELINE_LEFT" layoutX="307.0" layoutY="20.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="210.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" styleClass="btns-home" stylesheets="@../css/homeStyling.css" text="Commandes" textFill="#eec470" textOverrun="CLIP" wrapText="true" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="296.0" AnchorPane.topAnchor="19.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnReclamations" alignment="BASELINE_LEFT" layoutX="307.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="124.0" prefWidth="212.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" styleClass="btns-home" stylesheets="@../css/homeStyling.css" text="Réclamations" textFill="#eec470" textOverrun="CLIP" AnchorPane.bottomAnchor="18.0" AnchorPane.leftAnchor="306.0" AnchorPane.rightAnchor="294.0">
+                     <graphic>
+                        <Circle radius="57.0" stroke="WHITE" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop color="#ff6600b0" />
+                                    <Stop color="#ff6600b0" offset="0.007662835249042145" />
+                                    <Stop color="#ffe79dad" offset="0.3524904214559385" />
+                                    <Stop color="#b0824300" offset="0.6665876683651295" />
+                                    <Stop color="#ffffff00" offset="1.0" />
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Circle>
+                     </graphic>
+                  </Button>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="105.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="46.0">
+                     <image>
+                        <Image url="@../icons/books.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="342.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="409.0">
+                     <image>
+                        <Image url="@../icons/reclamation.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="595.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="158.0" AnchorPane.topAnchor="45.0">
+                     <image>
+                        <Image url="@../icons/delivery.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="601.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="153.0">
+                     <image>
+                        <Image url="@../icons/client.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="342.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="50.0">
+                     <image>
+                        <Image url="@../icons/order.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="106.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="106.0">
+                     <image>
+                        <Image url="@../icons/contract.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

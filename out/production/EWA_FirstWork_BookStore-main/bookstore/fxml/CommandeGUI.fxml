@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="474.0" prefWidth="743.0" style="-fx-background-color: #C4923E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstore.controllers.CommandeGUIController">
+   <children>
+      <AnchorPane prefHeight="146.0" prefWidth="954.0" style="-fx-background-color: #965015;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="146.0" prefWidth="323.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Circle fill="#c4923e" layoutX="72.0" layoutY="72.0" radius="76.0" stroke="#c4923e" strokeType="INSIDE" />
+                  <ImageView fitHeight="90.0" fitWidth="86.0" layoutX="25.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/book.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="103.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #C4923E; -fx-background-radius: 0 50 50 0;">
+                     <children>
+                        <Label layoutX="18.0" layoutY="1.0" prefHeight="97.0" prefWidth="179.0" style="-fx-background-radius: 50;" text="Bookstore&#10;EWA" textAlignment="JUSTIFY" textFill="WHITE">
+                           <font>
+                              <Font name="Serif Regular" size="39.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="803.0" layoutY="-3.0" prefHeight="153.0" prefWidth="151.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="btnClose" layoutX="24.0" layoutY="29.0" mnemonicParsing="false" onAction="#closeButtonAction" prefHeight="97.0" prefWidth="103.0" style="-fx-background-color: #965015;">
+                     <graphic>
+                        <ImageView fitHeight="107.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/exit.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="10.0" style="-fx-background-color: #C4923E;" />
+               </children>
+            </Pane>
+            <Pane layoutX="323.0" prefHeight="146.0" prefWidth="225.0" AnchorPane.leftAnchor="323.0" AnchorPane.rightAnchor="195.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane layoutX="-5.0" layoutY="18.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="10.0" style="-fx-background-color: #C4923E;" />
+                  <ImageView fitHeight="67.0" fitWidth="60.0" layoutX="21.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/order.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="31.0" layoutY="86.0" text="Commande " textFill="#85aac9">
+                     <font>
+                        <Font name="Bodoni MT Bold" size="37.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TableCommandes" layoutX="190.0" layoutY="159.0" prefHeight="301.0" prefWidth="525.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="159.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="50.0" text="id" />
+          <TableColumn fx:id="creation_date" minWidth="0.0" prefWidth="105.0" text="creation_date" />
+            <TableColumn fx:id="description" prefWidth="287.0" text="description" />
+            <TableColumn fx:id="status" prefWidth="82.0" text="status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnVALIDATE" layoutX="98.0" layoutY="186.0" mnemonicParsing="false" onAction="#onClickValidate" prefHeight="60.0" prefWidth="77.0" text="VALIDATE" />
+      <Button fx:id="btnADD" layoutX="41.0" layoutY="370.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="60.0" prefWidth="115.0" text="ADD" />
+      <Button fx:id="btnDELETE" layoutX="14.0" layoutY="186.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="60.0" prefWidth="77.0" text="DELETE" />
+      <Button fx:id="btnREFRESH" layoutX="41.0" layoutY="295.0" mnemonicParsing="false" onAction="#onClickREFRESH" prefHeight="60.0" prefWidth="115.0" text="REFRESH" />
+   </children>
+</AnchorPane>

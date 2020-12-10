@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="568.0" prefWidth="1174.0" style="-fx-background-color: #bce6eb;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bookstore.controllers.AuthorController">
+   <children>
+      <GridPane prefHeight="184.0" prefWidth="1148.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TextField fx:id="firstName" prefHeight="31.0" prefWidth="1037.0" promptText="First Name" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" top="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="lastName" promptText="Last Name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" top="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="bic" promptText="Bic Author" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" right="10.0" top="50.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="lab" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="946.0" layoutY="163.0" prefHeight="43.0" prefWidth="212.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.0" minWidth="10.0" prefWidth="163.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="675.0" minWidth="10.0" prefWidth="182.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="880.0" minWidth="10.0" prefWidth="193.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="button" onAction="#Btn" prefHeight="25.0" prefWidth="155.0" text="Ajoutr" textFill="#0348f5" wrapText="true" />
+            <Button fx:id="edit" onAction="#Edit" prefHeight="25.0" prefWidth="170.0" text="Modifier" textFill="#ff9000" GridPane.columnIndex="1" />
+            <Button fx:id="supp" onAction="#DeleteAuthor" prefHeight="25.0" prefWidth="194.0" text="Supprimer " textFill="RED" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+      <TableView fx:id="tabView" layoutX="117.0" layoutY="229.0" prefHeight="200.0" prefWidth="890.0" style="-fx-background-color: #ebebeb;">
+         <columns>
+            <TableColumn fx:id="idAuth" prefWidth="61.0" text="Id" />
+            <TableColumn fx:id="firstAuth" prefWidth="143.0" text="First Name" />
+            <TableColumn fx:id="lastAuth" prefWidth="108.0" text="Last Name" />
+            <TableColumn fx:id="bicAuth" minWidth="0.0" prefWidth="192.0" text="Bic Author" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
